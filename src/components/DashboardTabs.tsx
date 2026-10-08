@@ -4,18 +4,17 @@ import { useItemStore } from "@/store/dataStore";
 import { OverviewCards } from "@/components/OverviewCards";
 import { CategoryCards } from "@/components/CategoryCards";
 export function DashboardTabs() {
-  const [mode, setMode] = useState<"Overview" | "By Category">("Overview");
   return (
     <div className="flex max-w-5xl mx-auto space-y-8">
-      <Tabs defaultValue="account" className="w-[400px]">
+      <Tabs defaultValue="Overview" className="w-[400px]">
         <TabsList>
-          <TabsTrigger value="account">Overview</TabsTrigger>
-          <TabsTrigger value="password">By Category</TabsTrigger>
+          <TabsTrigger value="Overview">Overview</TabsTrigger>
+          <TabsTrigger value="By category">By Category</TabsTrigger>
         </TabsList>
-        <TabsContent value="account">
+        <TabsContent value="Overview">
           <OverviewCards/>
         </TabsContent>
-        <TabsContent value="password">
+        <TabsContent value="By category">
           <CategoryCards/>
         </TabsContent>
       </Tabs>

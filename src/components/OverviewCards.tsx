@@ -9,7 +9,7 @@ export function OverviewCards() {
   const totalPrice = inventory.reduce((sum,i)=> sum + i.price,0);
   const totalUnit = inventory.reduce((total,i)=> total + i.quantity,0);
   return (
-    <div className="grid gap-4 md:grid-cols-3">
+    <div className="grid gap-4 md:grid-cols-3 row">
       <Card>
         <CardHeader className="flex flex-row items-center justify-between pb-2">
           <CardTitle className="text-sm font-medium">Total Stock Value</CardTitle>
