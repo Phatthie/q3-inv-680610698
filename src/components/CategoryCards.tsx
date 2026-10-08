@@ -39,10 +39,12 @@ export function CategoryCards() {
 
         return (
           // Use Card component to display values by category
-          <div>
-            {category.label} - ฿{categoryValue.toFixed(2)} - {categoryUnits}{" "}
-            units
-          </div>
+          <Card>
+            <CardHeader className="flex gap-2 w-full mx-auto">{category.label}</CardHeader>
+            <CardContent>฿{categoryValue.toFixed(2)}</CardContent>
+            <CardTitle>{categoryUnits}{" "} units</CardTitle>
+          </Card>
+          
         );
       })}
     </div>
