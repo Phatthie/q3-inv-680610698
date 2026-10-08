@@ -8,7 +8,7 @@ export default function App() {
   return (
     <div className="flex flex-col min-h-screen bg-slate-50">
       {/* Main Content Area */}
-      <main className="flex-1 p-6 md:p-10">
+      <main className="flex-1 p-6 md:p-10 mx-auto">
         <div className="max-w-5xl mx-auto space-y-8">
           {/* Header Layout wrapper */}
           <div className="flex justify-between items-center">

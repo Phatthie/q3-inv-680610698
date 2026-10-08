@@ -1,6 +1,4 @@
-import { useState } from "react";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { useItemStore } from "@/store/dataStore";
 import { OverviewCards } from "@/components/OverviewCards";
 import { CategoryCards } from "@/components/CategoryCards";
 export function DashboardTabs() {
